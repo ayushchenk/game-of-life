@@ -1,5 +1,8 @@
 import { Application } from 'pixi.js'
+import { Mouse } from './Models/Mouse';
 import { MainScene } from './Scenes/MainScene';
+
+Mouse.initialize();
 
 const app = new Application({
 	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
